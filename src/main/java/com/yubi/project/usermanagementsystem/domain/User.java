@@ -14,11 +14,11 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "first_name")
+    @Column(name = "first_name", length = 50)
     private String firstName;
-    @Column(name = "last_name")
+    @Column(name = "last_name", length = 50)
     private String lastName;
-    @Column(name = "email_id")
+    @Column(name = "email_id", length = 100)
     private String emailId;
 
     private User(){}
